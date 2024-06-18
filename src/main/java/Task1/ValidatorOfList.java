@@ -1,10 +1,8 @@
 package Task1;
-
 import java.util.List;
 
 public class ValidatorOfList {
     private List<String> input;
-
     public String toValidList(List<String> input) {
 
         StringBuilder result = new StringBuilder();
