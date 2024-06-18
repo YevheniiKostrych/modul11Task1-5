@@ -16,10 +16,10 @@ public class ArrayToSortString {
         for (String str : numbers) {
             stringBuilder.append(str);
         }
-        Pattern pattern=Pattern.compile("(\\d)");
-        Matcher matcher=pattern.matcher(stringBuilder);
+        Pattern pattern = Pattern.compile("(\\d)");
+        Matcher matcher = pattern.matcher(stringBuilder);
         List<String> ints = new ArrayList<>();
-        while (matcher.find()){
+        while (matcher.find()) {
             ints.add(matcher.group(1));
         }
         Collections.sort(ints, new Comparator<String>() {
@@ -30,6 +30,4 @@ public class ArrayToSortString {
 
         return String.join(", ", ints);
     }
-
-
 }

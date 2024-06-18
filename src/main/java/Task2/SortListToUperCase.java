@@ -6,11 +6,11 @@ import java.util.List;
 
 public class SortListToUperCase {
 
-    public List<String> validatorSortListToUperCase(List<String>input){
+    public List<String> validatorSortListToUperCase(List<String> input) {
         List<String> upperCaseStrings = new ArrayList<>();
-for (String string: input)
-    upperCaseStrings.add(string.toUpperCase());
-        Collections.sort(upperCaseStrings,Collections.reverseOrder());
+        for (String string : input)
+            upperCaseStrings.add(string.toUpperCase());
+        Collections.sort(upperCaseStrings, Collections.reverseOrder());
         return upperCaseStrings;
     }
 

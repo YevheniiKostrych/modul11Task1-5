@@ -6,8 +6,8 @@ import java.util.List;
 
 class ValidatorTest {
     public static void main(String[] args) {
-ValidatorOfList validatorOfList=new ValidatorOfList();
-        List<String> input= new ArrayList<>();
+        ValidatorOfList validatorOfList = new ValidatorOfList();
+        List<String> input = new ArrayList<>();
         input.add("Ivan");
         input.add("Stepan");
         input.add("Peter");

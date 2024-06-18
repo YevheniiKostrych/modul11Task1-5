@@ -7,8 +7,8 @@ import java.util.List;
 
 public class SortListToUperCaseTest {
     public static void main(String[] args) {
-        SortListToUperCase sortListToUperCase=new SortListToUperCase();
-        List<String> input= new ArrayList<>();
+        SortListToUperCase sortListToUperCase = new SortListToUperCase();
+        List<String> input = new ArrayList<>();
         input.add("Ivan");
         input.add("Stepan");
         input.add("Peter");
