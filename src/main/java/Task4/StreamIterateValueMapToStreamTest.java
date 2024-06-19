@@ -9,6 +9,7 @@ public class StreamIterateValueMapToStreamTest {
         long m = (long) Math.pow(2, 48);
         long seed = 1;
 
+
         StreamIterateValueMapToStream streamIterateValueMapToStream = new StreamIterateValueMapToStream();
         Stream<Long> iterateRandom = streamIterateValueMapToStream.SetValueMapToStream(seed, a, c, m);
 

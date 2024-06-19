@@ -1,17 +1,16 @@
 package Task2;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class SortListToUperCase {
 
     public List<String> validatorSortListToUperCase(List<String> input) {
-        List<String> upperCaseStrings = new ArrayList<>();
-        for (String string : input)
-            upperCaseStrings.add(string.toUpperCase());
-        Collections.sort(upperCaseStrings, Collections.reverseOrder());
-        return upperCaseStrings;
+        return input.stream()
+                .map(String::toUpperCase)
+                .sorted((i1, i2) -> i2.compareTo(i1))
+                .collect(Collectors.toList());
+
     }
 
 }

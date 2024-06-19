@@ -14,12 +14,10 @@ public class MixerStreams {
         Iterator<T> zippedIterator = new Iterator<T>() {
             private boolean alternate = true;
 
-            @Override
             public boolean hasNext() {
                 return iterator1.hasNext() && iterator2.hasNext();
             }
 
-            @Override
             public T next() {
                 if (!hasNext()) {
                     throw new java.util.NoSuchElementException();

@@ -1,7 +1,5 @@
 package Task2;
 
-import Task1.ValidatorOfList;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +13,8 @@ public class SortListToUperCaseTest {
         input.add("Alex");
         input.add("Sem");
         input.add("Max");
-        System.out.println(sortListToUperCase.validatorSortListToUperCase(input));
+        List<String> result = sortListToUperCase.validatorSortListToUperCase(input);
+        System.out.println(result);
 
     }
 }
