@@ -18,19 +18,5 @@ public class ArrayToSortString {
                 .map(String::valueOf)
                 .collect(Collectors.joining(", "));
 
-
-
-//        StringBuilder stringBuilder = new StringBuilder();
-//        for (String str : numbers) {
-//            stringBuilder.append(str);
-//        }
-//        Pattern pattern = Pattern.compile("(\\d)");
-//        Matcher matcher = pattern.matcher(stringBuilder);
-//        List<String> ints = new ArrayList<>();
-//        while (matcher.find()) {
-//            ints.add(matcher.group(1));
-//        }
-//        return ints.stream().sorted().collect(Collectors.joining(","));
-
     }
 }
