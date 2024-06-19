@@ -8,8 +8,6 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class ArrayToSortString {
-
-
     public String toSortString(String[] numbers) {
         return Arrays.stream(numbers)
                 .flatMap(string -> Arrays.stream(string.split(",\\s*")))
