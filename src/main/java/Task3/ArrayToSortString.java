@@ -15,6 +15,5 @@ public class ArrayToSortString {
                 .sorted()
                 .map(String::valueOf)
                 .collect(Collectors.joining(", "));
-
     }
 }
